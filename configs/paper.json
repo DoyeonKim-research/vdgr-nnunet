@@ -1,0 +1,53 @@
+{
+  "method": "VDGR-nnU-Net",
+  "dataset": "Dataset102_AirRCFullBinaryVessel",
+  "dataset_id": 102,
+  "configuration": "3d_fullres",
+  "fold": 0,
+  "splits": {
+    "train": 178,
+    "validation": 38,
+    "heldout_test": 38
+  },
+  "software": {
+    "python": "3.12.7",
+    "pytorch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "nnunetv2": "2.6.2"
+  },
+  "training": {
+    "epochs": 100,
+    "iterations_per_epoch": 250,
+    "validation_iterations_per_epoch": 50,
+    "patch_size": [128, 128, 128],
+    "batch_size": 2,
+    "initial_learning_rate": 0.01,
+    "nesterov_momentum": 0.99,
+    "weight_decay": 0.00003,
+    "gradient_clip_l2": 12.0,
+    "checkpoint_interval_epochs": 5
+  },
+  "distance_strata": {
+    "background": 0,
+    "deep_interior": 1,
+    "intermediate": 2,
+    "boundary_proximal": 3,
+    "lower_percentile": 33.3333,
+    "upper_percentile": 66.6667,
+    "distance_units": "millimetres"
+  },
+  "auxiliary_loss": {
+    "distance_loss_weight": 0.10,
+    "class_weights_background_deep_intermediate_boundary": [0.1, 1.0, 1.5, 2.0],
+    "ignore_background": true
+  },
+  "refinement": {
+    "enabled": true,
+    "gate_intermediate_coefficient": 0.25,
+    "local_context_kernel": 5,
+    "local_context_weights": "P_D + 0.5 P_I",
+    "wide_context_kernel": 9,
+    "wide_context_weights": "P_D + P_I",
+    "gate": "clip(P_B + 0.25 P_I, 0, 1)"
+  }
+}

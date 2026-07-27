@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "VDGR-nnU-Net: reference implementation"
+type: software
+authors:
+  - family-names: Kim
+    given-names: Doyeon
+    email: doyeonkim.research@gmail.com
+    affiliation: "Department of Intelligent Electronic Computer Engineering, Chonnam National University"
+  - family-names: Kim
+    given-names: Jinsul
+    email: jsworld@jnu.ac.kr
+    affiliation: "Department of Intelligent Electronic Computer Engineering, Chonnam National University"
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/DoyeonKim-research/vdgr-nnunet"
+preferred-citation:
+  type: article
+  title: "Vessel distance-guided refinement improves boundary-proximal and endpoint recovery in pulmonary vessel segmentation on chest CT"
+  authors:
+    - family-names: Kim
+      given-names: Doyeon
+    - family-names: Oh
+      given-names: Seungmin
+    - family-names: Oh
+      given-names: Sangwon
+    - family-names: Lee
+      given-names: Jihoon
+    - family-names: Kim
+      given-names: Jinsul
