@@ -33,6 +33,8 @@ UIDs. Together with `splits/airrc_split_ids.csv`, it makes the reported
 178/38/38 split identifiable in the public source collection without exposing
 local paths or private clinical identifiers.
 
+The split file uses `train`, `val`, and `test` as its exact labels.
+
 If source labels use the public series UID rather than the manuscript case ID,
 pass this CSV through `VDGR_CASE_MAPPING`. A minimal custom mapping has the same
 form:

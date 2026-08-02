@@ -16,7 +16,7 @@ license: Apache-2.0
 repository-code: "https://github.com/DoyeonKim-research/vdgr-nnunet"
 preferred-citation:
   type: article
-  title: "Vessel distance-guided refinement improves boundary-proximal and endpoint recovery in pulmonary vessel segmentation on chest CT"
+  title: "Vessel distance-guided refinement improves endpoint recovery in pulmonary vessel segmentation on chest CT"
   authors:
     - family-names: Kim
       given-names: Doyeon

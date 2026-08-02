@@ -6,8 +6,8 @@
   "fold": 0,
   "splits": {
     "train": 178,
-    "validation": 38,
-    "heldout_test": 38
+    "val": 38,
+    "test": 38
   },
   "software": {
     "python": "3.12.7",

@@ -60,8 +60,9 @@ Image data are not redistributed. Obtain the AirRC annotations and corresponding
 LUNA16 CT series from their public sources, then arrange the files according to
 `docs/DATA_LAYOUT.md`.
 
-The exact 178/38/38 train, validation, and held-out test assignment is provided
-in `splits/airrc_split_ids.csv`. Public source-series identifiers are provided in
+The exact 178/38/38 train, validation, and test assignment is provided in
+`splits/airrc_split_ids.csv`, using the split labels `train`, `val`, and `test`.
+Public source-series identifiers are provided in
 `splits/airrc_case_to_luna16_series_uid.csv`.
 
 ## Reproduction
